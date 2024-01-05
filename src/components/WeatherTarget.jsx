@@ -21,7 +21,7 @@ export  const WeatherTarget = () => {
     
     const getData1 = async (cityIndex) => {
         let postalCode = ciudadesEstados[cityIndex].codigoPostal;
-        const data = await axios.get(`http://api.weatherunlocked.com/api/current/us.${postalCode}?app_id=54fcb1ce&app_key=714a4d98655e6be443b20307220d19f8`)
+        const data = await axios.get(`https://api.weatherunlocked.com/api/current/us.${postalCode}?app_id=54fcb1ce&app_key=714a4d98655e6be443b20307220d19f8`)
         setData(data.data)
     }
 
